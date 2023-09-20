@@ -1,3 +1,5 @@
+//Mensaje de saludo y peticion de rellenar los campos
+alert("Bienvenido, por favor complete los campos con los datos indicados")
 // Obtener una referencia al formulario
 const formulario = document.getElementById("miFormulario");
 
@@ -12,7 +14,6 @@ formulario.addEventListener("submit", function (event) {
     const estadoCivil = document.getElementById("civil").value;
     const genero = document.getElementById("genero").value;
     const fechaNacimiento = document.getElementById("edad").value;
-
     // Comprobar si los campos están vacíos
     if (nombres === '' || direccion === '' || telefono === '' || estadoCivil === 'seleccion' || genero === 'seleccion' || fechaNacimiento === '') {
         alert("Por favor, complete todos los campos.");
