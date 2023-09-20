@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="form">
+        <h4>Ingrese sus Datos</h4>
+        <form id="miFormulario">
+            <!--Ingreso del nombre-->
+            <label for="nombre"><p>Nombre Completo:</p></label>
+            <input class="control" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <!--Ingreso de la direccion-->
+            <label for="direccion"><p>Direccion:</p></label>
+            <input class="control" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección">
+            <!--Ingreso del numero de telefono-->
+            <label for="telefono"><p>Telefono o Celular:</p></label>
+            <input class="control" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+            <!--Ingreso estado civil-->
+            <label for="civil"><p>Genero:</p></label>
+                    <select class="control" name="civil" id="civil">
+                        <option value="seleccion">Selecccione su Estado Civil</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                    </select>
+            <!--Ingreso de genero-->
+            <label for="genero"><p>Genero:</p></label>
+                    <select class="control" name="genero" id="genero">
+                        <option value="seleccion">Selecccione su Genero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+            <!--ingreso de edad-->
+            <label for="edad"><p>Fecha de nacimiento:</p></label>
+            <input class="control" type="date" name="edad" id="edad" placeholder="Ingrese su fecha de nacimiento">
+            <br>
+            <!--Boton de envio-->
+            <input class="boton" type="submit" value="Enviar Datos">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
